@@ -28,7 +28,7 @@ const EmployeeForm: React.FC<EmployeeFormProps> = ({ initialData, onSave, onCanc
   };
 
   return (
-    <div className="absolute top-10 left-20 p-4 w-full max-w-md max-h-full">
+    <div className="absolute top-10 left-10 p-4 w-full max-w-md max-h-screen">
       <div className="absolute bg-white rounded-lg shadow dark:bg-gray-700">
         <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">

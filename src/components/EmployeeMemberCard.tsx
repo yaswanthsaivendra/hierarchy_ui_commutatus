@@ -48,6 +48,11 @@ const EmployeeMemberCard: React.FC<EmployeeCardProps> = ({ employee, teamName, s
               <MdDeleteForever size={24} className='cursor-pointer' onClick={() => handleDelete(employee.id)} />
             </div>
           }
+          {employee.position === 'Team Leader' &&
+            <div className='flex justify-center items-center'>
+              <FaEdit size={20} className='cursor-pointer' onClick={() => setIsEditing(true)} />
+            </div>
+          }
         </>
       )}
     </div>

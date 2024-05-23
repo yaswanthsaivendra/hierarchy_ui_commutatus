@@ -22,8 +22,14 @@ export const useEmployee = (setCompanyData: React.Dispatch<React.SetStateAction<
   };
 
   const editTeamMember = (teamName: string, updatedMember: Employee) => {
-    setCompanyData((prevData) => {
-      const updatedHeads = prevData.heads.map((head) => {
+  setCompanyData((prevData) => {
+    const updatedHeads = prevData.heads.map((head) => {
+      // Check if the updated member is a team leader
+      if (head.name === updatedMember.name && head.position === updatedMember.position) {
+        // If it's a team leader, update the head details
+        return { ...head, ...updatedMember };
+      } else {
+        // Otherwise, update the team members
         return {
           ...head,
           teams: head.teams?.map((team) => {
@@ -41,10 +47,12 @@ export const useEmployee = (setCompanyData: React.Dispatch<React.SetStateAction<
             return team;
           }),
         };
-      });
-      return { ...prevData, heads: updatedHeads };
+      }
     });
-  };
+    return { ...prevData, heads: updatedHeads };
+  });
+};
+
 
   const deleteTeamMember = (teamName: string, memberId: number) => {
     setCompanyData((prevData) => {

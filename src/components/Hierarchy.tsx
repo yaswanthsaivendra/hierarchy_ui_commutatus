@@ -29,9 +29,9 @@ const Hierarchy: React.FC = () => {
                             <div className='flex'>
                                 {head.teams.map((team, teamIndex) => (
                                     <div key={teamIndex} className='flex flex-col items-center space-y-4'>
-                                        <TeamName teamName={team.teamName} setCompanyData={setCompanyData} />
+                                        <TeamName teamName={team.teamName} setCompanyData={setCompanyData} companyData={companyData} />
                                         <div className='flex flex-col items-center space-y-8'>
-                                            <EmployeeCard employee={team} />
+                                            <EmployeeMemberCard employee={team} teamName={team.teamName} setCompanyData={setCompanyData}/>
                                             <div className='flex'>
                                                 {team.members.map((member, memberIndex) => (
                                                     <EmployeeMemberCard key={memberIndex} employee={member} teamName={team.teamName} setCompanyData={setCompanyData} />

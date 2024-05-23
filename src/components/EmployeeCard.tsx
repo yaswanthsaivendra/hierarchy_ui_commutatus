@@ -1,5 +1,4 @@
 import React from 'react';
-import { MdDeleteForever } from "react-icons/md";
 import { FaEdit } from "react-icons/fa";
 import { Employee } from '../types';
 
@@ -19,11 +18,10 @@ const EmployeeCard: React.FC<EmployeeProps> = ({ employee }) => {
         <p>Phone: {employee.phoneNumber}</p>
         <p>Email: {employee.email}</p>
       </li>
-      {employee.position === 'Team Member' ?
+      {employee.position === 'Team Leader' ?
         (
           <div className='flex justify-center items-center space-x-4'>
             <FaEdit size={20}/>
-            <MdDeleteForever size={24} />
           </div>
 
         ) : (
