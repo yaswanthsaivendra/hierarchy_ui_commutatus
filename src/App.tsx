@@ -4,7 +4,7 @@ import Hierarchy from "./components/Hierarchy"
 function App() {
 
   return (
-    <div className="min-h-screen overflow-x-auto flex">
+    <div className="min-h-screen overflow-x-auto flex relative">
     <Hierarchy />
     </div>
   )

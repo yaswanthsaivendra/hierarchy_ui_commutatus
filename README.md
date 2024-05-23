@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+## Employment Hierarchy UI 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Tech Stack
+- React
+- Tailwind CSS
+  
+### Basic Features
+- able to see the position name with the employee name.
+- able to add a new team member.
+- remove a team member.
+- able to update employee information.
+- can't delete a team member if he is the last member of the team ( ensures that the team always have atleast one team member)
+- We should be able to create a new Team or edit an existing one.
+- Filter an employee by Employee Name, Phone Number, and Email ID.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Bonus points
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Two teams cannot have the same name.
+- We should be able to select a Team/Head and should be able to see all the employees who are under them.
