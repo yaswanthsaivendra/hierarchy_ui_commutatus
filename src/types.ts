@@ -111,7 +111,7 @@ export const initialData : CompanyDataType = {
                     teamName: 'Team Engineering 1',
                     id: 9,
                     name: 'Kohli',
-                    position: 'Engineering Team Leader',
+                    position: 'Team Leader',
                     phoneNumber: '1234568',
                     email: 'teamA@example.com',
                     members: [
@@ -151,7 +151,7 @@ export const initialData : CompanyDataType = {
                     teamName: 'Team Designing 1',
                     id: 12,
                     name: 'Chahal',
-                    position: 'Design Team Leader',
+                    position: 'Team Leader',
                     phoneNumber: '1234569',
                     email: 'teamX@example.com',
                     members: [

@@ -11,7 +11,6 @@
 - able to update employee information.
 - can't delete a team member if he is the last member of the team ( ensures that the team always have atleast one team member)
 - We should be able to create a new Team or edit an existing one.
-- Filter an employee by Employee Name, Phone Number, and Email ID.
 
 
 ### Bonus points
