@@ -3,11 +3,11 @@ import EmployeeCard from './EmployeeCard';
 import EmployeeMemberCard from './EmployeeMemberCard';
 import TeamName from './TeamName';
 import { useState, useEffect } from'react';
-import { initialData } from '../types';
+import { initialData, CompanyDataType } from '../types';
 
 const Hierarchy: React.FC = () => {
     
-    const [companyData, setCompanyData] = useState(() => {
+    const [companyData, setCompanyData] = useState<CompanyDataType>(() => {
         const savedData = localStorage.getItem('companyData');
         return savedData ? JSON.parse(savedData) : initialData;
     });
